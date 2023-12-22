@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pammachius Jérôme">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+        defer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defefr></script>
+    <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Contacter le service Client</title>
+    <link rel="icon" href="photos/logo_pampam.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row  justify-content-center">
+            <div class="col-10">
+                <h1 class="title mt-5 text-center">Contacter le service client</h1>
+                <div class="col-10">
+                    <div class="row ">
+                        <div class="mx-auto">
+                            <div class="mb-3" id="ecouteFormulaire">
+                                <label class="form-label fs-4" for="selectionDemande">Votre demande:*</label>
+                                <select class="form-select" id="selectionDemande" onchange="demandeClient()">
+                                    <option selected>Votre demande concerne</option>
+                                    <option value="1">Information articles</option>
+                                    <option value="2">Commande & paiement</option>
+                                    <option value="3">Expédition & livraison</option>
+                                    <option value="4">Retour, échange & remboursement</option>
+                                    <option value="5">Code promo & Bon d'achat</option>
+                                    <option value="6">Newsletters</option>
+                                    <option value="7">Problème technique</option>
+                                    <option value="8">Autres demandes</option>
+                                    <option value="9">Protection des données personnelles</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="zoneDeText" class="form-label fs-4">Message:*</label>
+                                <textarea class="form-control" aria-label="With textarea" id="zoneDeText" style="height: 100px" onchange="demandeClient()"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="prenom" class="form-label fs-4">Votre prénom:*</label>
+                                <input type="text" class="form-control" id="prenom" onchange="demandeClient()">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nom" class="form-label fs-4">Votre prénom:*</label>
+                                <input type="text" class="form-control" id="nom" onchange="demandeClient()">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fs-4">Votre courriel:*</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" onchange="demandeClient()">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+
+                                    <label for="photo" class="form-label fs-4">Votre photo:*</label>
+                                    <select name="photo" id="photo" aria-label="sélectionnez votre photo" onchange="affichageImage()">
+                                        <option selected>Sélectionner votre photo</option>
+                                        <option value="alain">alain</option>
+                                        <option value="albert">albert</option>
+                                        <option value="alfred">alfred</option>
+                                        <option value="alphonse">alphonse</option>
+                                        <option value="alphonsine">alphonsine</option>
+                                        <option value="berth">berth</option>
+                                        <option value="elisabeth">elisabeth</option>
+                                        <option value="gertrude">gertrude</option>
+                                        <option value="gilbert">gilbert</option>
+                                        <option value="gilberte">gilberte</option>
+                                        <option value="hugh">hugh</option>
+                                        <option value="jacques">jacques</option>
+                                        <option value="john">john</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <div id="insertionPhoto">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
